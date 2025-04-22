@@ -21,7 +21,7 @@ const Pagination = ({
         {[...Array(totalPages)].map((_, index) => {
           return (
             <button
-              onClick={() => handlePageClick(index + 1)}
+              onClick={() => handlePageClick(index)}
               className={styles.pageNumber}
               key={index}
               disabled={index + 1 === currentPage}
