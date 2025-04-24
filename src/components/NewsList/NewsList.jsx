@@ -6,7 +6,7 @@ import withSkeleton from '../../helpers/hocs/withSkeleton.jsx';
 const NewsList = ({ news }) => {
   return (
     <ul className={styles.list}>
-      {news.map((item) => {
+      {news?.map((item) => {
         return <NewsItem key={item.id} item={item} />;
       })}
     </ul>
