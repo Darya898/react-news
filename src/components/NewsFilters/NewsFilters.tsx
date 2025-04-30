@@ -8,10 +8,10 @@ import {CategoriesApiResponse, IFilters} from "@/interfaces";
 
 interface Props{
     filters:IFilters;
-    changeFilter:(key:string,value:string|number|null)=>void
+    changeFilter:(key:string,value:string|number|null)=>void,
 }
 
-const NewsFilters = ({ filters, changeFilter }:Props) => {
+const NewsFilters = ({ filters, changeFilter}:Props) => {
   const { data: dataCategories } = useFetch<CategoriesApiResponse,null>(getCategories);
   return (
     <div className={styles.filters}>

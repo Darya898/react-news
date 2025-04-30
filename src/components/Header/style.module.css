@@ -1,9 +1,14 @@
 .header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding: 12px 24px;
   background: #fff;
   border-bottom: 1px solid #ccc;
+}
+.info {
+  display: flex;
   flex-direction: column;
   gap: 12px;
 }
@@ -12,4 +17,11 @@
 }
 .date {
   font-size: 16px;
+}
+.dark {
+  background: #23232f;
+  border-bottom: 1px solid rgb(60, 60, 60);
+}
+.light {
+  background-color: #fff;
 }
