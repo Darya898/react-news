@@ -4,12 +4,12 @@ import styles from './styles.module.css';
 import {INews} from "@/interfaces";
 
 interface Props{
-  banners?:INews[]|null;
+  banners?:INews[]|null,
 }
 const BannersList = ({ banners }:Props) => {
 
   return (
-    <ul className={styles.banners}>
+    <ul className={`${styles.banners}`}>
       {banners?.map((banner) => {
         return <NewsBanner key={banner.id} item={banner} />;
       })}

@@ -5,9 +5,11 @@ import NewsFilters from '../NewsFilters/NewsFilters';
 import { useFilters } from '../../helpers/hooks/useFilters';
 import { useDebounce } from '../../helpers/hooks/useDebounce';
 import { useFetch } from '../../helpers/hooks/useFetch';
-import {getNews, NewsApiResponse} from '../../api/apiNews';
+import {getNews} from '../../api/apiNews';
 import PaginationWrapper from '../PaginationWrapper/PaginationWrapper';
-import {ParamsType} from "@/interfaces";
+import {NewsApiResponse, ParamsType} from "@/interfaces";
+
+
 const NewsByFilters = () => {
   const { filters, changeFilter } = useFilters({
     page_number: 1,
@@ -38,7 +40,8 @@ const NewsByFilters = () => {
 
   return (
     <section className={styles.section}>
-      <NewsFilters filters={filters} changeFilter={changeFilter} />
+      <NewsFilters filters={filters}
+                   changeFilter={changeFilter} />
 
       <PaginationWrapper
         top
