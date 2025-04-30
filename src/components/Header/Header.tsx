@@ -1,7 +1,7 @@
 import { formatDate } from '../../helpers/formatDate';
 import styles from './style.module.css';
 import {themeIcons} from "../../assets/index.ts";
-import {useTheme} from "@/context/ThemeContext.tsx";
+import {useTheme} from "./../../context/ThemeContext.tsx";
 
 const Header = () => {
     const {isDark,toggleTheme}=useTheme()

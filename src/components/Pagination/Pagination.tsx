@@ -1,6 +1,6 @@
 import styles from './styles.module.css';
 import {IPaginationProps} from "@/interfaces";
-import {useTheme} from "@/context/ThemeContext.tsx";
+import {useTheme} from "../../context/ThemeContext.tsx";
 
 const Pagination = ({
   currentPage,
