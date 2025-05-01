@@ -1,12 +1,12 @@
 import styles from './styles.module.css';
 import NewsItem from '../NewsItem/NewsItem.tsx';
 import withSkeleton from '../../helpers/hocs/withSkeleton';
-import { INews } from '@/interfaces';
+import {INews} from "@/interfaces";
 
-interface Props {
-  news?: INews[];
+interface Props{
+  news?:INews[];
 }
-const NewsList = ({ news }: Props) => {
+const NewsList = ({ news }:Props) => {
   return (
     <ul className={styles.list}>
       {news?.map((item) => {
