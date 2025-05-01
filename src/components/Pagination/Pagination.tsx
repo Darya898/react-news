@@ -1,6 +1,6 @@
 import styles from './styles.module.css';
-import {IPaginationProps} from "@/interfaces";
-import {useTheme} from "../../context/ThemeContext.tsx";
+import { IPaginationProps } from '@/interfaces';
+import { useTheme } from '../../context/ThemeContext.tsx';
 
 const Pagination = ({
   currentPage,
@@ -8,11 +8,12 @@ const Pagination = ({
   handlePreviousPage,
   handlePageClick,
   totalPages,
-
-}:IPaginationProps) => {
-    const {isDark}=useTheme();
+}: IPaginationProps) => {
+  const { isDark } = useTheme();
   return (
-    <div className={`${styles.pagination} ${isDark?styles.dark:styles.light}`}>
+    <div
+      className={`${styles.pagination} ${isDark ? styles.dark : styles.light}`}
+    >
       <button
         onClick={handlePreviousPage}
         disabled={currentPage <= 1}
