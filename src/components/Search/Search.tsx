@@ -1,15 +1,15 @@
 import styles from './styles.module.css';
-import {useTheme} from "../../context/ThemeContext.tsx";
+import { useTheme } from '../../context/ThemeContext.tsx';
 
-interface Props{
-    keywords:string|'',
-    setKeywords:(keywords:string)=>void,
+interface Props {
+  keywords: string | '';
+  setKeywords: (keywords: string) => void;
 }
-const Search = ({ keywords, setKeywords }:Props) => {
-  const {isDark}=useTheme();
+const Search = ({ keywords, setKeywords }: Props) => {
+  const { isDark } = useTheme();
 
   return (
-    <div className={`${styles.search} ${isDark?styles.dark:styles.light}`}>
+    <div className={`${styles.search} ${isDark ? styles.dark : styles.light}`}>
       <input
         value={keywords}
         className={styles.input}
