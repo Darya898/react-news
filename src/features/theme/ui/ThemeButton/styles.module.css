@@ -1,0 +1,7 @@
+.dark {
+    background: #23232f;
+    border-bottom: 1px solid rgb(60, 60, 60);
+}
+.light {
+    background-color: #fff;
+}
