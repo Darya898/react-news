@@ -6,7 +6,6 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-    "esModuleInterop": true,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -24,12 +23,9 @@
     "noUncheckedSideEffectImports": true,
     "baseUrl": ".",
     "types": ["node"],
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+
   },
 
-  "include": ["src/**/*", "global.d.ts"], // Убедитесь, что ваш файл декларации включен
-  "exclude": ["node_modules"],
+  "include": ["src","src/shared/interfaces/vite-env.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

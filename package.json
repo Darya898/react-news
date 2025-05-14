@@ -1,5 +1,5 @@
 {
-  "name": "react-news",
+  "name": "learn-rtk",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,25 +11,26 @@
     "format": "prettier --write src/**/*.{ts,tsx,js,jsx,json,css,md}"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^2.7.0",
-    "@types/react-redux": "^7.1.34",
-    "axios": "^1.8.4",
+    "@reduxjs/toolkit": "^2.6.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-redux": "^9.2.0"
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.4.1"
   },
   "devDependencies": {
-    "@eslint/js": "^9.22.0",
-    "@types/node": "^20.11.13",
-    "@types/react": "^18.2.22",
-    "@types/react-dom": "^18.2.7",
+    "@eslint/js": "^9.21.0",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.1",
+    "@types/react-redux": "^7.1.34",
     "@vitejs/plugin-react": "^4.3.4",
-    "eslint": "^9.22.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint": "^9.21.0",
+    "eslint-import-resolver-typescript": "^4.3.1",
+    "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
-    "globals": "^16.0.0",
+    "globals": "^15.15.0",
     "prettier": "^3.5.3",
-    "typescript": "^5.8.3",
-    "vite": "^6.3.1"
+    "typescript": "^5.8.2",
+    "vite": "^6.2.0"
   }
 }
